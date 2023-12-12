@@ -1,0 +1,66 @@
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px
+$gutter: $grid-gutter-width
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+
+@include font('Inter', normal, 500, '../fonts/Inter-Medium.woff2')
+@include font('Inter', normal, 600, '../fonts/Inter-SemiBold.woff2')
+@include font('Inter', normal, 700, '../fonts/Inter-Bold.woff2')
+
+// GENERAL CSS SETTINGS
+:root
+	/*Colors*/
+	--primary: #3E97FF
+	--access: #03BA4C
+	--access--light: #50CD89
+	--danger: #BA0303
+	--danger--light: #F1416C
+	--title-color: #181C32
+	--text-color: #333
+	--text-color--light: #5E6278
+	--light-color: #fff
+	--gray-color: #A1A5B7
+	--gray-color--2: #7E8299
+	--gray-color--3: #5E6278
+	--gray-color--4: #3F4254
+	--gray-color--5: #858585
+	--gray-color--light: #F9F9F9
+
+	/*Font*/
+	--font: Inter, sans-serif
+	--font-system: -apple-system, BlinkMacSystemFont, Arial, sans-serif
+	--font-size: 1rem
+	--line-height: 1.5
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: var(--primary)
+	color: #fff
+
+html, body
+	overflow-x: hidden
+
+body
+	font-family: var(--font)
+	font-size: var(--font-size)
+	line-height: var(--line-height)
+	color: var(--text-color)
+	min-width: 320px
+	position: relative
