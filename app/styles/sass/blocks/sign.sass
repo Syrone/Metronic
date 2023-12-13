@@ -1,0 +1,70 @@
+.main-sign
+	display: flex
+	align-items: stretch
+
+.wrapper-sign
+	width: 100%
+	margin-top: 140px
+	position: relative
+
+	&>*
+		height: 100%
+
+	.btn-icon
+		position: absolute
+		top: -70px
+
+	.sign
+		max-width: 400px
+		height: 100%
+		display: flex
+		flex-direction: column
+
+		&-image
+
+			img
+				min-height: 140px
+
+		&-user
+			display: block
+			font-weight: 600
+			color: var(--bs-heading-color)
+
+		&-buttons
+			display: flex
+			align-items: center
+			justify-content: space-between
+
+		&-switch
+			display: flex
+			flex-wrap: wrap
+			align-items: center
+			justify-content: center
+			margin-right: auto
+
+	&-code
+		
+		.sign
+			max-width: 475px
+
+	.btn[type='submit']
+		width: fit-content
+
+
+.email-code
+	display: flex
+	flex-wrap: wrap
+	align-items: stretch
+
+	h2
+		flex-basis: 100%
+
+	input
+		min-height: 60px
+		flex-basis: 60px
+		font-size: 1.75rem
+		text-align: center
+		padding: .25rem
+
+		&:not(:last-child)
+			margin-right: 1.25rem

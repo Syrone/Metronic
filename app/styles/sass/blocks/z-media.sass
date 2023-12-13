@@ -1,0 +1,66 @@
+@media screen and (max-width: 1400px)
+
+	.page-background
+
+		&.sign-background
+			background-size: 1500px
+
+@media screen and (max-width: 1200px)
+
+@media screen and (max-width: 992px)
+
+@media screen and (max-width: 768px)
+
+	.page-background
+
+		&.sign-background
+			display: none
+
+@media screen and (max-width: 576px)
+
+	:root,
+	[data-bs-theme=light]
+		/*Header*/
+		--header-height: 3.375rem
+
+	.header
+
+		&-logo
+
+			img
+				height: 20px
+
+	.wrapper-sign
+		margin-top: 60px
+
+		&.with-back-button
+			margin-top: 130px
+
+		.sign
+
+			&-buttons
+				flex-direction: column
+				
+				&>.btn
+					width: 100%
+
+					&:not(:first-child)
+						margin-top: 1.25rem
+		
+		&-code
+
+			.sign
+				max-width: 300px
+
+	.email-code
+
+		input
+			min-height: 44px
+			flex-basis: 44px
+			font-size: 1.125rem
+
+			&:not(:last-child)
+				margin-right: .375rem
+
+	.footer
+		padding: 1.5rem 0

@@ -1,3 +1,66 @@
 // GENERAL PROJECT STYLES
 
+.page
+	min-height: 100vh
+	min-height: 100dvh
+	display: flex
+	flex-direction: column
+	position: relative
 
+.page-background
+	background-repeat: no-repeat
+	background-size: cover
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	z-index: -1
+
+	&.sign-background
+		background-position: 0 60%
+		background-size: initial
+		transform: translateX(30%)
+
+.main
+	flex: 1
+	margin-top: var(--header-height)
+
+
+.btn
+	--bs-btn-font-size: var(--bs-body-font-size)
+	--bs-btn-font-weight: 600
+
+	&.btn-icon
+		width: 2.375rem
+		height: 2.375rem
+
+.btn-link
+	--bs-btn-color: var(--bs-link-color)
+
+.form-control
+	padding-top: .7825rem
+	padding-bottom: .7825rem 
+	font-size: var(--bs-body-font-size)
+	font-weight: 600
+	color: var(--bs-gray-600)
+	border-width: 2px
+
+	&:focus
+		border-color: var(--bs-primary)
+
+	&.form-control-solid
+
+		&::placeholder
+			color: var(--bs-gray-400)
+
+.menu
+
+	&-item
+		padding: 0
+		
+		&:not(:last-child)
+			margin-right: 2.5rem
+
+		.menu-link
+			padding: .5rem 0

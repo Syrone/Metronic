@@ -41,13 +41,13 @@ function browsersync() {
 }
 
 function scripts() {
-	return src(['app/js/*.js', '!app/js/*.min.js'])
+	return src(['app/js/*.js', '!app/js/*.min.js', '!app/js/*.bundle.js'])
 		.pipe(webpackStream({
 			mode: 'production',
 			performance: { hints: false },
-			plugins: [
-				new webpack.ProvidePlugin({ $: 'jquery', jQuery: 'jquery', 'window.jQuery': 'jquery' }), // jQuery (npm i jquery)
-			],
+			// plugins: [
+			// 	new webpack.ProvidePlugin({ $: 'jquery', jQuery: 'jquery', 'window.jQuery': 'jquery' }), // jQuery (npm i jquery)
+			// ],
 			module: {
 				rules: [
 					{
@@ -104,6 +104,7 @@ function images() {
 function buildcopy() {
 	return src([
 		'{app/js,app/css}/*.min.*',
+		'{app/js,app/css}/*.bundle.*',
 		'app/images/**/*.*',
 		'!app/images/src/**/*',
 		'app/fonts/**/*'
