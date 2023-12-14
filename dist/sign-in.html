@@ -49,8 +49,17 @@
                     <div class="mb-6">
                         <input type="email" class="form-control form-control-solid" placeholder="Электронная почта"/>
                     </div>
-                    <div class="">
-                        <input type="password" class="form-control form-control-solid" autocomplete="off" placeholder="Пароль"/>
+                    <div class="position-relative" data-kt-password-meter="true">
+                        <input class="form-control form-control-solid"
+                            type="password" name="new_password" autocomplete="off" placeholder="Пароль" />
+            
+                        <!--begin::Visibility toggle-->
+                        <span class="btn btn-icon btn-show-password h-100 bg-gray-300 px-3 position-absolute translate-middle-y top-50 end-0"
+                            data-kt-password-meter-control="visibility">
+                                <i class="ki-duotone ki-eye-slash fs-1"><span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span></i>
+                                <i class="ki-duotone ki-eye d-none fs-1"><span class="path1"></span><span class="path2"></span><span class="path3"></span></i>
+                        </span>
+                        <!--end::Visibility toggle-->
                     </div>
 
                     <div class="sign-buttons mb-md-0 mb-7 mt-7">

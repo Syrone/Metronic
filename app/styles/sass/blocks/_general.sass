@@ -35,12 +35,21 @@
 		width: 2.375rem
 		height: 2.375rem
 
+	&.btn-show-password
+		--bs-btn-color: var(--bs-primary)
+		width: fit-content
+		border-top-left-radius: 0
+		border-bottom-left-radius: 0
+
+		&:not(.btn-outline):not(.btn-dashed):not(.border-hover):not(.border-active):not(.btn-flush)
+			border-left: 1px solid var(--bs-primary)
+
 .btn-link
 	--bs-btn-color: var(--bs-link-color)
 
 .form-control
-	padding-top: .7825rem
-	padding-bottom: .7825rem 
+	padding-top: .85rem
+	padding-bottom: .85rem 
 	font-size: var(--bs-body-font-size)
 	font-weight: 600
 	color: var(--bs-gray-600)
@@ -50,6 +59,7 @@
 		border-color: var(--bs-primary)
 
 	&.form-control-solid
+		border-width: 0
 
 		&::placeholder
 			color: var(--bs-gray-400)
