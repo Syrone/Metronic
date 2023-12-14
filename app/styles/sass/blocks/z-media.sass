@@ -3,18 +3,26 @@
 	.page-background
 
 		&.sign-background
+			background-position: 0 -500px
 			background-size: 1500px
 
 @media screen and (max-width: 1200px)
 
 @media screen and (max-width: 992px)
 
+	.page-background
+
+		&.sign-background
+			background-position: 0 -360px
+			background-size: 1300px
+			transform: translateX(35%)
+
 @media screen and (max-width: 768px)
 
 	.page-background
 
 		&.sign-background
-			display: none
+			transform: translateX(45%)
 
 @media screen and (max-width: 576px)
 
@@ -22,6 +30,11 @@
 	[data-bs-theme=light]
 		/*Header*/
 		--header-height: 3.375rem
+
+	.page-background
+
+		&.sign-background
+			display: none
 
 	.header
 
@@ -37,6 +50,7 @@
 			margin-top: 130px
 
 		.sign
+			max-width: 100%
 
 			&-buttons
 				flex-direction: column
@@ -46,21 +60,22 @@
 
 					&:not(:first-child)
 						margin-top: 1.25rem
-		
-		&-code
 
-			.sign
-				max-width: 300px
+			&-switch
+				margin-right: initial
 
 	.email-code
+		column-gap: .375rem
 
 		input
+			min-width: 44px
 			min-height: 44px
-			flex-basis: 44px
-			font-size: 1.125rem
-
-			&:not(:last-child)
-				margin-right: .375rem
+			aspect-ratio: 1
+			flex: 1
+			font-size: 5vw
 
 	.footer
 		padding: 1.5rem 0
+
+		.menu
+			justify-content: center

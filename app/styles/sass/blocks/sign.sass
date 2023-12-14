@@ -4,15 +4,18 @@
 
 .wrapper-sign
 	width: 100%
-	margin-top: 140px
+	margin-top: 70px
 	position: relative
 
 	&>*
 		height: 100%
 
-	.btn-icon
-		position: absolute
-		top: -70px
+	&.with-back-button
+		margin-top: 140px
+		
+		.btn-icon
+			position: absolute
+			top: -70px
 
 	.sign
 		max-width: 400px
@@ -52,19 +55,18 @@
 
 
 .email-code
-	display: flex
-	flex-wrap: wrap
-	align-items: stretch
+	display: grid
+	grid-template-columns: repeat(6, 1fr)
+	column-gap: 1.25rem
 
 	h2
-		flex-basis: 100%
+		grid-row: 1
+		grid-column: -1/1
 
 	input
+		grid-row: 2
 		min-height: 60px
 		flex-basis: 60px
 		font-size: 1.75rem
 		text-align: center
 		padding: .25rem
-
-		&:not(:last-child)
-			margin-right: 1.25rem
