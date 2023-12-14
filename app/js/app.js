@@ -49,4 +49,16 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 	//** (End) Email Code Inputs **/
 
+	//** (Start) Buttons Back **/
+	const backButtons = document.querySelectorAll('.btn-back');
+
+	if (backButtons.length > 0) {
+		backButtons.forEach(function(button) {
+			button.addEventListener('click', function() {
+				history.back();
+			});
+		});
+	}
+	//** (End) Buttons Back **/
+
 })
