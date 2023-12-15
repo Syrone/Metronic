@@ -1,12 +1,18 @@
 @media screen and (min-width: 1920px)
 
+	/** (Start) General **/
+
 	.page-background
 
 		&.sign-background
 			background-size: 90%
 			background-position: center 60%
 
+	/** (End) General **/
+
 @media screen and (max-width: 1400px)
+
+	/** (Start) General **/
 
 	.page-background
 
@@ -14,15 +20,162 @@
 			background-position: 0 60%
 			background-size: 1500px
 
+	/** (Start) Form Inputs **/
+
+	.form
+
+		&-content
+			
+			&-item 
+				max-width: 660px
+
+	/** (End) Form Inputs **/
+
+	/** (End) General **/
+
 @media screen and (max-width: 1200px)
 
-@media screen and (max-width: 992px)
+	/** (Start) General **/
+	
+	/** (Start) Form Inputs **/
+
+	.form
+
+		&-content
+			
+			&-item 
+				width: 50vw
+
+	/** (End) Form Inputs **/
+
+	/** (End) General **/
+
+@media screen and (max-width: 991px)
+
+	/** (Start) General **/
+
+	:root,
+	[data-bs-theme=light]
+		/*Header*/
+		--header-height: 4rem
 
 	.page-background
 
 		&.sign-background
 			background-size: 1300px
 			transform: translateX(35%)
+
+	.navbar
+		--bs-navbar-nav-link-background-hover: transparent
+		--bs-nav-item-gap-x: 0
+		--bs-nav-item-gap-y: .75rem
+
+		&-dark,
+		&[data-bs-theme=dark]
+			
+			.nav-link
+				--bs-nav-link-font-size: 2.25rem
+				--bs-nav-link-font-weight: 500
+				--bs-nav-link-padding-y: 0
+
+				&:focus-visible
+					box-shadow: initial
+
+		&-collapse
+			--bs-navbar-brand-margin-y: 2.5rem
+			--bs-navbar-collapse-height: var(--bs-navbar-brand-margin-y) * 2 - 3.25rem
+			height: calc( 100vh - var(--bs-navbar-collapse-height) ) !important
+			height: calc( 100dvh - var(--bs-navbar-collapse-height) ) !important
+			display: flex
+			flex-direction: column
+			align-items: stretch
+			margin-top: var(--bs-navbar-brand-margin-y)
+			margin-bottom: var(--bs-navbar-brand-margin-y)
+
+			&>.navbar-nav
+				margin-bottom: 1.5rem
+
+		&-account
+			--bs-nav-item-gap-x: .875rem
+			--bs-nav-item-gap-y: 0
+			margin-top: auto
+			margin-left: initial
+
+			.navbar-nav
+				flex-direction: row
+
+			.nav-item
+				align-self: center
+
+			.nav-user
+				margin: .25rem
+
+				.img-thumbnail
+					width: 70px
+
+			.nav-sign-out
+
+				.ki-duotone
+					font-size: 2rem
+
+	.widget
+
+		&-inner
+			border-width: 0
+			border-radius: var(--bs-border-radius-lg)
+			padding: 0
+
+	/** (End) General **/
+
+	/** (Start) Scroll **/
+
+	div,main,ol,pre,span,ul
+		scrollbar-width: thin
+		scrollbar-color: var(--bs-scrollbar-color) transparent
+
+	div::-webkit-scrollbar,main::-webkit-scrollbar,ol::-webkit-scrollbar,pre::-webkit-scrollbar,span::-webkit-scrollbar,ul::-webkit-scrollbar
+		width: var(--bs-scrollbar-size)
+		height: var(--bs-scrollbar-size)
+			
+	div ::-webkit-scrollbar-thumb,main ::-webkit-scrollbar-thumb,ol ::-webkit-scrollbar-thumb,pre ::-webkit-scrollbar-thumb,span ::-webkit-scrollbar-thumb,ul ::-webkit-scrollbar-thumb
+		border-radius: var(--bs-scrollbar-size)
+			
+	.hover-scroll-overlay-x,.hover-scroll-x
+		scrollbar-color: var(--bs-scrollbar-color) transparent
+			
+	.hover-scroll-overlay-x::-webkit-scrollbar-thumb,.hover-scroll-x::-webkit-scrollbar-thumb
+		background-color: var(--bs-scrollbar-color)
+
+	/** (End) Scroll **/
+
+	/** (Start) Form Inputs **/
+
+	.form
+
+		&-content
+
+			&-title
+				margin-bottom: 1.25rem
+				padding-top: 0
+			
+			&-item
+				width: 100%
+				max-width: 100%
+				margin-left: 0
+
+			&-inner
+				flex-direction: column
+
+		&-buttons
+			flex-direction: column-reverse
+
+			&>*
+
+				&:not(:last-child)
+					margin-right: 0
+					margin-top: 1.25rem
+
+	/** (End) Form Inputs **/
 
 @media screen and (max-width: 768px)
 
@@ -32,6 +185,8 @@
 			transform: translateX(45%)
 
 @media screen and (max-width: 576px)
+
+	/** (Start) General **/
 
 	:root,
 	[data-bs-theme=light]
@@ -43,12 +198,66 @@
 		&.sign-background
 			display: none
 
+	.page-header
+		margin-bottom: 1.25rem
+
+		h1
+			margin-bottom: .875rem
+
+	.navbar
+		--bs-navbar-padding-y: .675rem
+
+		&-dark,
+		&[data-bs-theme=dark]
+			
+			.nav-link
+				--bs-nav-link-font-size: 1.5rem
+
+	.breadcrumb
+		--bs-breadcrumb-font-size: .75rem
+
+	.widget
+
+		.wrapper-tabs
+			margin-bottom: 1.875rem
+
+		.nav-tabs
+			--bs-nav-link-font-size: .875rem
+			--bs-nav-link-padding-y: .625rem
+
+	/** (Start) Form Inputs **/
+
+	.form
+
+		&-content
+
+			&-title
+				margin-top: .625rem
+
+		&-buttons
+
+			&>*
+
+				&:not(:last-child)
+					margin-bottom: 1rem
+
+		&-control-hint
+			padding-top: .625rem
+
+	/** (End) Form Inputs **/
+	
+	/** (End) General **/
+
+	/** (Start) Header **/
+
 	.header
 
 		&-logo
 
 			img
 				height: 20px
+
+	/** (End) Header **/
 
 	.wrapper-sign
 		margin-top: 60px
@@ -81,8 +290,12 @@
 			flex: 1
 			font-size: 5vw
 
+	/** (Start) Footer **/
+
 	.footer
 		padding: 1.5rem 0
 
 		.menu
 			justify-content: center
+
+	/** (End) Footer **/

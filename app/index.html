@@ -5,6 +5,217 @@
 
     <main class="main">
         
+        <div class="page-header">
+            <div class="container">
+                <h1 class="fs-2">Добавить объявление</h1>
+
+                <ol class="breadcrumb breadcrumb-line text-muted fs-6 fw-semibold">
+                    <li class="breadcrumb-item">
+                        <a href="#">
+                            Мои объявления
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#">
+                            Добавить объявление
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        Общая информация
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="widget">
+            <div class="container">
+                <div class="widget-inner">
+                    <div class="wrapper-tabs hover-scroll-x snaps-inline">
+                        <div class="d-grid">
+                            <ul class="nav nav-tabs flex-nowrap text-nowrap">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-bs-toggle="tab" href="#kt_tab_pane_1">Общая информация</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#kt_tab_pane_2">Расположение</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#kt_tab_pane_3">Особенности</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#kt_tab_pane_4">Спальные места</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#kt_tab_pane_5">Удобства</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#kt_tab_pane_6">Правила отмены</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#kt_tab_pane_7">Фото</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="kt_tab_pane_1" role="tabpanel">
+                            <form action="#" class="form">
+                                <h2 class="form-title">
+                                    Основные данные
+                                </h2>
+
+                                <div class="form-content">
+                                    <div class="d-flex flex-lg-row flex-column align-items-stretch justify-content-between mb-lg-5 mb-7">
+                                        <h3 class="form-content-title">
+                                            Отображаемое название <span>*</span>
+                                        </h3>
+                                        <div class="form-content-item" data-custom-input-maxlength="true">
+                                            <input type="text" class="form-control form-control-solid" maxlength="65" placeholder="Добавьте короткое название вашего жилья">
+                                            <span class="form-control-hint">Это название будет отображаться  заголовком на вашем новом сайте</span>
+                                            <span data-custom-display-maxlength="true"></span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-lg-row flex-column align-items-stretch justify-content-between mb-lg-5 mb-7">
+                                        <h3 class="form-content-title">
+                                            Внутреннее название <span>*</span>
+                                        </h3>
+                                        <div class="form-content-item" data-custom-input-maxlength="true">
+                                            <input type="text" class="form-control form-control-solid" maxlength="65" placeholder="Добавьте короткое название вашего жилья">
+                                            <span class="form-control-hint">Это название будет видно только вам</span>
+                                            <span data-custom-display-maxlength="true"></span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-lg-row flex-column align-items-stretch justify-content-between mb-lg-5 mb-7">
+                                        <h3 class="form-content-title">
+                                            Тип жилья <span>*</span>
+                                        </h3>
+                                        <div class="form-content-item" data-custom-input-maxlength="false">
+                                            <select class="form-select form-select-solid" data-hide-search="true" data-control="select2" data-placeholder="Выберите тип сдаваемого жилья">
+                                                <option></option>
+                                                <option value="1">Option 1</option>
+                                                <option value="2">Option 2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-lg-row flex-column align-items-stretch justify-content-between mb-lg-5 mb-7">
+                                        <h3 class="form-content-title">
+                                            Площадь жилья, м²
+                                        </h3>
+                                        <div class="form-content-item" data-custom-input-maxlength="false">
+                                            <input type="text" class="form-control form-control-solid" maxlength="65" placeholder="Площадь жилья, м²">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-lg-row flex-column align-items-stretch justify-content-between mb-lg-5 mb-7">
+                                        <h3 class="form-content-title">
+                                            На каком этаже находится
+                                        </h3>
+                                        <div class="form-content-item flex-lg-row" data-custom-input-maxlength="false">
+                                            <input type="text" class="form-control form-control-solid mw-lg-150px" maxlength="65" placeholder="Этаж">
+
+                                            <div class="form-content-inner ms-xl-12 ms-lg-8 mt-lg-0 mt-7">
+                                                <h3 class="form-content-title d-lg-none">
+                                                    Сколько этажей всего
+                                                </h3>
+
+                                                <input type="text" class="form-control form-control-solid mw-lg-200px" maxlength="65" placeholder="Сколько этажей всего">
+
+                                                <div class="form-check form-check-custom form-check-solid ms-xl-12 ms-lg-8 mt-lg-0 mt-7">
+                                                    <input class="form-check-input h-40px w-40px" type="checkbox" value="" id="flexCheckbox1"/>
+                                                    <label class="form-check-label" for="flexCheckbox1">
+                                                        Лифт
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-lg-row flex-column align-items-stretch justify-content-between mb-lg-5 mb-7">
+                                        <h3 class="form-content-title">
+                                            Номер телефона <span>*</span>
+                                        </h3>
+                                        <div class="form-content-item">
+                                            <input class="form-control form-control-solid" id="kt_inputmask_1" placeholder="+7 999 999-99-99">
+                                            <span class="form-control-hint">По этому номеру гость сможет связаться с вами</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-lg-row flex-column align-items-stretch justify-content-between mb-lg-5 mb-7">
+                                        <h3 class="form-content-title">
+                                            Способ связи <span>*</span>
+                                        </h3>
+                                        <div class="form-content-item" data-custom-input-maxlength="false">
+                                            <div class="d-flex flex-lg-row flex-column">
+                                                <div class="form-check form-check-custom form-check-solid me-xl-12 me-lg-8 mb-lg-0 mb-5">
+                                                    <input class="form-check-input h-40px w-lg-30px h-lg-30px w-40px" type="checkbox" value="" id="flexCheckbox2"/>
+                                                    <label class="form-check-label" for="flexCheckbox2">
+                                                        Звонок
+                                                    </label>
+                                                </div>
+                                                <div class="form-check form-check-custom form-check-solid me-xl-12 me-lg-8 mb-lg-0 mb-5">
+                                                    <input class="form-check-input h-40px w-lg-30px h-lg-30px w-40px" type="checkbox" value="" id="flexCheckbox3"/>
+                                                    <label class="form-check-label" for="flexCheckbox3">
+                                                        Telegram
+                                                    </label>
+                                                </div>
+                                                <div class="form-check form-check-custom form-check-solid me-xl-12 me-lg-8 mb-lg-0 mb-5">
+                                                    <input class="form-check-input h-40px w-lg-30px h-lg-30px w-40px" type="checkbox" value="" id="flexCheckbox4"/>
+                                                    <label class="form-check-label" for="flexCheckbox4">
+                                                        WhatsApp
+                                                    </label>
+                                                </div>
+                                                <div class="form-check form-check-custom form-check-solid">
+                                                    <input class="form-check-input h-40px w-lg-30px h-lg-30px w-40px" type="checkbox" value="" id="flexCheckbox5"/>
+                                                    <label class="form-check-label" for="flexCheckbox5">
+                                                        Viber
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <span class="form-control-hint">Укажите, через что гости могут напрямую связаться с вами - эта информация будет отображена на вашем сайте.</span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-lg-row flex-column align-items-stretch justify-content-between">
+                                        <h3 class="form-content-title">
+                                            Цена по-умолчанию
+                                        </h3>
+                                        <div class="form-content-item" data-custom-input-maxlength="false">
+                                            <input type="text" class="form-control form-control-solid" maxlength="65" placeholder="Введите базовую цену за 1 сутки">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-buttons">
+                                    <button type="button" class="btn btn-outline btn-outline-secondary py-3 px-8">
+                                        Вернуться назад
+                                    </button>
+
+                                    <button type="submit" class="btn btn-primary py-3 px-8">
+                                        Сохранить и продолжить 
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="kt_tab_pane_2" role="tabpanel">
+                            2
+                        </div>
+                        <div class="tab-pane fade" id="kt_tab_pane_3" role="tabpanel">
+                            3
+                        </div>
+                        <div class="tab-pane fade" id="kt_tab_pane_4" role="tabpanel">
+                            4
+                        </div>
+                        <div class="tab-pane fade" id="kt_tab_pane_5" role="tabpanel">
+                            5
+                        </div>
+                        <div class="tab-pane fade" id="kt_tab_pane_6" role="tabpanel">
+                            6
+                        </div>
+                        <div class="tab-pane fade" id="kt_tab_pane_7" role="tabpanel">
+                            7
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 
 </div>
